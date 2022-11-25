@@ -1,7 +1,7 @@
 #include "XmlParser.h"
-#include <iostream>     // USES cerr
+#include <iostream>                             // USES cerr
 #include <xercesc/util/PlatformUtils.hpp>       // USES Initialize()
-#include <stdexcept>        // USES std::exception
+#include <stdexcept>                            // USES std::exception
 
 namespace xml_parser {    
 

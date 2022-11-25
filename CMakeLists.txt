@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.10.2)
 
 # Set the project name
-project(xml_parser VERSION 0.1.0)
+project(xml-parser VERSION 0.1.0)
 
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES
