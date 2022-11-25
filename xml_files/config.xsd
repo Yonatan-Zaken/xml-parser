@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="protocol">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="commands" type="config_t" maxOccurs="1"/>
+                <xs:element name="responses" type="config_t" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="config_t">
+        <xs:sequence>
+            <xs:element name="entry" type="entry_t" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="entry_t">
+        <xs:attribute name="key" use="required"/>
+        <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

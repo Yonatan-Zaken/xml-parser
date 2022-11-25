@@ -1,0 +1,8 @@
+<protocol xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <commands>
+        <entry key="LOAD" value="FEED" />
+    </commands>
+    <responses>
+        <entry key="E000" value="DONE" />
+    </responses>
+</protocol>
