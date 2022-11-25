@@ -1,7 +1,7 @@
 #include "XmlParser.h"
-#include <iostream>     // USES cerr
+#include <iostream>                             // USES cerr
 #include <xercesc/util/PlatformUtils.hpp>       // USES Initialize()
-#include <stdexcept>        // USES std::exception
+#include <stdexcept>                            // USES std::exception
 
 namespace xml_parser {    
 
@@ -24,8 +24,8 @@ bool XmlParser::init() {
         mParser->setDoNamespaces(true);
         mParser->setValidationScheme(SAXParser::Val_Always);
         mParser->setValidationConstraintFatal(true);
-        mParser->setExternalNoNamespaceSchemaLocation("/home/yonatan10/development/xml_parser/xml_files/config.xsd");
-        if (mParser->loadGrammar("/home/yonatan10/development/xml_parser/xml_files/config.xsd", Grammar::SchemaGrammarType) == NULL) {
+        mParser->setExternalNoNamespaceSchemaLocation("/home/yonatan10/development/xml-parser/xml_files/config.xsd");
+        if (mParser->loadGrammar("/home/yonatan10/development/xml-parser/xml_files/config.xsd", Grammar::SchemaGrammarType) == NULL) {
             ret = false;
             return ret;
         }
