@@ -6,7 +6,7 @@ using namespace xml_parser;
 class ParserTest : public ::testing::Test {
 protected:
     void SetUp() override {
-        mXmlParser = new XmlParser("/home/yonatan10/development/xml_parser/xml_files/config.xml");
+        mXmlParser = new XmlParser("/home/yonatan10/development/xml-parser/xml_files/config.xml");
     }   
     void TearDown() override {
         delete mXmlParser;
